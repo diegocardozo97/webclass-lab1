@@ -1,9 +1,85 @@
 .all-page {
   background-color: aliceblue;
-  padding: 5px 15px 5px 15px;
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.welcome-div {
+  background-color: blanchedalmond;
+  border-bottom: 5px gainsboro solid;
+  height: 80vh;
+}
+
+.title-div {
+  height: 50%;
+  align-content: center;
 }
 
 .title {
-  color: aquamarine;
-  font-size: 30px;
+  color: darkcyan;
+  font-size: 50px;
+  margin: 0;
+  padding: 7% 0 0 0;
+  text-align: center;
 }
+
+.intro-header {
+  text-align: center;
+  font-size: 20px;
+}
+
+nav {
+  background-color: cadetblue;
+  margin-top: 50px;
+}
+
+nav > ol {
+  border-bottom: 1px gainsboro solid;
+  border-top: 1px gainsboro solid;
+  margin: 0px;
+}
+
+nav li {
+  display: list-item;
+}
+
+address {
+  text-align: center;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+
+
+/**
+ * Computer
+ */
+@media screen and (min-width: 900px) {
+nav li {
+  display: inline-block;
+}
+} /* computer */
+
+/**
+ * Tablet
+ */
+@media only screen and (min-width: 700px) and (min-height: 300px) and (max-width: 900px) {
+nav li {
+  list-style: lower-roman;
+}
+} /* tablet */
+
+/**
+ * Cellphone
+ */
+@media only screen and (max-width: 700px) and (max-height: 400px) { 
+nav li {
+  list-style: circle;
+}
+
+footer {
+  margin-bottom: 0;
+}
+} /* cellphone */
