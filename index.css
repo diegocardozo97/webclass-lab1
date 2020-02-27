@@ -38,10 +38,19 @@ nav > ol {
   border-bottom: 1px gainsboro solid;
   border-top: 1px gainsboro solid;
   margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-nav li {
+li {
   display: list-item;
+}
+
+section {
+  border: 1px gainsboro solid;
+  border-radius: 10px;
+  padding: 0px 15px 10px 15px;
+  margin: 10px;
 }
 
 address {
@@ -49,7 +58,10 @@ address {
 }
 
 footer {
-  margin-bottom: 20px;
+  background-color: blanchedalmond;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-top: 50px;
 }
 
 
@@ -57,8 +69,12 @@ footer {
  * Computer
  */
 @media screen and (min-width: 900px) {
-nav li {
+li {
   display: inline-block;
+}
+
+section > h3 {
+  text-align: center;
 }
 } /* computer */
 
@@ -68,6 +84,10 @@ nav li {
 @media only screen and (min-width: 700px) and (min-height: 300px) and (max-width: 900px) {
 nav li {
   list-style: lower-roman;
+}
+
+li {
+  list-style: circle;
 }
 } /* tablet */
 
@@ -79,7 +99,25 @@ nav li {
   list-style: circle;
 }
 
+li {
+  list-style: circle;
+}
+
+section {
+  border: unset;
+  border-top: 1px gainsboro solid;
+  border-bottom: 1px gainsboro solid;
+  border-radius: unset;
+  padding: 0px 15px 10px 15px;
+  margin: 10px 0px;
+}
+
+address {
+  text-align: left;
+}
+
 footer {
-  margin-bottom: 0;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 } /* cellphone */
